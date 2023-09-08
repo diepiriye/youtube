@@ -1,0 +1,1436 @@
+*{
+    background: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, verdana, georgia;
+    color: white;
+}
+.wrapper{
+    margin-top: 20px;
+    
+}
+
+/********* BEGINNING OF FIRST FLEX ROW********/
+.firstflex{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.firststage1{
+    display: flex;
+    margin-left: 25px;
+    flex-grow: 1;
+    
+}
+
+.solidbars{
+    padding-top: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fa-youtube{
+    color: red;
+    padding-left: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.name1{
+    padding-top: 2px;
+    padding-left: 2px;
+    font-size: 23px;
+}
+sup{
+    font-size: 10px;
+    padding-left: 2px;
+
+}
+
+.firststage2{
+    display: flex;
+    flex-grow: 4;
+    
+}
+.searchy{
+    width: 600px;
+    height: 35px;
+    border: 1px dotted white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 5px;
+    background: #222021;
+    z-index: 4;
+}
+
+.search{
+    width: 50px;
+    height: 35px;
+    border: 1px dotted white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #2c2c2c;
+    text-align: center;
+    padding-top: 9px;
+    color: white;
+    cursor: pointer;
+}
+.fa-microphone{
+    font-size: 20px;
+    margin-left: 20px;
+    padding-top: 10px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* mrcophone hover */
+.fa-microphone:hover{
+    background: grey;
+   }
+
+
+.firststage3{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-right: 10px;
+    
+}
+.fa-video{
+    font-size: 20px;
+    padding-top: 8px;
+    cursor: pointer;
+}
+.fa-bell{
+    
+    font-size: 20px;
+    padding-top: 8px;
+    cursor: pointer;
+}
+.roundD{
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: purple;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+/**********END OF FIRST FLEX ROW***********/
+
+
+/*********SEcond Flex begins here*******/
+/*.secondflex{
+    margin-top: 30px; 
+    display: flex;
+    cursor: pointer;
+}
+
+
+.mainhome{
+    margin-left: 25px;
+    flex-grow: 1;
+    
+}
+
+.mainhome .home{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.mainhome .home:hover{
+    background: grey;
+}
+
+.mainhome h3{
+    margin-left: 20px;
+}
+
+.mainhome .short{
+    display: flex;
+    margin-bottom: 30px;
+    
+}
+
+.mainhome .subscription{
+    display: flex;
+    margin-bottom: 30px;
+
+}
+.others{
+    margin-left: 70px;
+    display: flex;
+    flex-grow: 3;
+}
+.others h3{
+    background: grey;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    padding-top: 5px;
+    
+    
+
+}
+.others h3:hover{
+    background: black;
+}
+
+hr{
+    width: 200px;
+}*/
+
+/******* SECOND STAGE BEGINS FROM HERE **********/
+
+.secondstage{
+    margin-top: 20px;
+    display: flex;
+}
+.right{
+   width: 250px;
+   height: 90vh;
+   font-size: 14px;
+   font-weight: bold;
+   overflow-y: scroll;
+    cursor: pointer;
+}
+
+.right .mainhome a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.right .mainhome .homer{
+    padding: 20px;
+    font-weight: lighter;
+}
+.allicons{
+    padding-right: 20px;
+}
+
+
+hr{
+    width: 215px;
+    margin-left: 10px;
+}
+
+/***** second stage left others begins here ********/
+.left{
+    margin-left: 20px;
+    width: calc(100vw - 270px);
+    height: 80vh;
+    /*background: white;*/
+}
+
+.left .others{
+    display: flex;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    overflow-x: scroll;
+    cursor: pointer;
+}
+.left .others h3{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: lighter; 
+    background: #242124;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    transition: .5s;
+    
+}
+
+.left .others h3:hover{
+    background: #33363D;
+}
+
+.active{
+    background: white;
+    color: black;
+    height: 30px;
+}
+
+/* THE END OF SECOND STAGE LEFT OTHERS */
+
+/* SECOND STAGE OTHERS2 BEGINS HERE */
+
+.left .others2{
+    width: 100%;
+    height: 100%;
+    /*background: green;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+
+}
+.others2{
+    overflow-y: scroll;
+    
+    
+}
+
+.others2 .monday{
+    padding: 10px;
+    /*border: 1px solid red;*/
+}
+
+.picture1{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.picture2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    display: block;
+
+}
+.others2 .arrange{
+    display: flex;
+} 
+
+.arrange .tittle{
+    padding-top: 12px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.arrange .tittle .name{
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: light;
+}
+
+/* HOVER EFFECT ON THE IMAGE */
+.picture1:hover{
+    transform:scale(1.1);
+    z-index: 4;
+}
+
+/* @MEDIA SCREEN STARTS HERE */
+
+@media (min-width: 1100px)and (max-width: 1300px) {
+    .firstflex{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .firststage1{
+        display: flex;
+        margin-left: 25px;
+        flex-grow: 1;
+        
+    }
+    
+    .solidbars{
+        padding-top: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-youtube{
+        color: red;
+        padding-left: 30px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .name1{
+        padding-top: 2px;
+        padding-left: 2px;
+        font-size: 23px;
+    }
+    sup{
+        font-size: 10px;
+        padding-left: 2px;
+    
+    }
+    
+    .firststage2{
+        display: flex;
+        flex-grow: 4;
+        
+    }
+    .searchy{
+        width: 500px;
+        height: 35px;
+        border: 1px dotted white;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding-left: 5px;
+        background: #222021;
+        z-index: 4;
+    }
+    
+    .search{
+        width: 50px;
+        height: 35px;
+        border: 1px dotted white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background: #2c2c2c;
+        text-align: center;
+        padding-top: 9px;
+        color: white;
+        cursor: pointer;
+    }
+    .fa-microphone{
+        font-size: 20px;
+        margin-left: 10px;
+        padding-top: 10px;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    /* mrcophone hover */
+    .fa-microphone:hover{
+        background: grey;
+       }
+    
+    
+    .firststage3{
+        display: flex;
+        flex-grow: 3;
+        justify-content: space-evenly;
+        margin-right: 30px;
+        
+    }
+    .fa-video{
+        font-size: 20px;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+    .fa-bell{
+        
+        font-size: 20px;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+    .roundD{
+        width: 30px;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 50%;
+        background: purple;
+        color: white;
+        text-align: center;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+    
+    .right{
+        width: 100px;
+        height: 60vh;
+        font-size: 14px;
+        font-weight: bold;
+        overflow: hidden;
+         cursor: pointer;
+    }  
+    
+    .right .mainhome .homer{
+        padding: 20px;
+        font-weight: lighter;
+    }
+
+    .allicons{
+        padding-right: 20px;
+        padding-left: 12px;
+    }
+     
+     hr{
+         width: 0;
+         margin-left: 0;
+    }
+
+    .left{
+        margin-left: 20px;
+        width: calc(100vw - 120px);
+        height: 80vh;
+        /*background: white;*/
+    }
+    .picture1{
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+    }
+    
+     
+        
+}
+
+@media (min-width: 1000px)and (max-width: 1099px){
+    .firstflex{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .firststage1{
+        display: flex;
+        margin-left: 25px;
+        flex-grow: 1;
+        
+    }
+    
+    .solidbars{
+        padding-top: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-youtube{
+        color: red;
+        padding-left: 30px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .name1{
+        padding-top: 2px;
+        padding-left: 2px;
+        font-size: 23px;
+    }
+    sup{
+        font-size: 10px;
+        padding-left: 2px;
+    
+    }
+    
+    .firststage2{
+        display: flex;
+        flex-grow: 4;
+        
+    }
+    .searchy{
+        width: 400px;
+        height: 35px;
+        border: 1px dotted white;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding-left: 5px;
+        background: #222021;
+        z-index: 4;
+    }
+    
+    .search{
+        width: 50px;
+        height: 35px;
+        border: 1px dotted white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background: #2c2c2c;
+        text-align: center;
+        padding-top: 9px;
+        color: white;
+        cursor: pointer;
+    }
+    .fa-microphone{
+        font-size: 20px;
+        margin-left: 20px;
+        padding-top: 10px;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    /* mrcophone hover */
+    .fa-microphone:hover{
+        background: grey;
+       }
+    
+    
+    .firststage3{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        margin-right: 20px;
+        
+    }
+    .fa-video{
+        font-size: 20px;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+    .fa-bell{
+        
+        font-size: 20px;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+    .roundD{
+        width: 30px;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 50%;
+        background: purple;
+        color: white;
+        text-align: center;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+    .right{
+        width: 100px;
+        height: 60vh;
+        font-size: 14px;
+        font-weight: bold;
+        overflow: hidden;
+         cursor: pointer;
+    }  
+    
+    .right .mainhome .homer{
+        padding: 20px;
+        font-weight: lighter;
+    }
+
+    .allicons{
+        padding-right: 20px;
+        padding-left: 12px;
+    }
+     
+     hr{
+         width: 0;
+         margin-left: 0;
+    }
+
+    .left{
+        margin-left: 20px;
+        
+        width: calc(100vw - 120px);
+        height: 80vh;
+        /*background: white;*/
+    }
+    
+    
+    .left .others2{
+        width: 80%;
+        height: 100%;
+        margin-left: 80px;
+        margin-right: 0;
+        /*background: green;*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2px;
+    
+    }
+    .picture1{
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+
+}
+
+@media (min-width: 825px)and (max-width: 999px){
+    .firstflex{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .firststage1{
+        display: flex;
+        margin-left: 25px;
+        flex-grow: 1;
+        
+    }
+    
+    .solidbars{
+        padding-top: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-youtube{
+        color: red;
+        padding-left: 30px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .name1{
+        padding-top: 2px;
+        padding-left: 2px;
+        font-size: 23px;
+    }
+    sup{
+        font-size: 10px;
+        padding-left: 2px;
+    
+    }
+    
+    .firststage2{
+        display: flex;
+        flex-grow: 4;
+        
+    }
+    .searchy{
+        width: 200px;
+        height: 35px;
+        border: 1px dotted white;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding-left: 5px;
+        background: #222021;
+        z-index: 4;
+    }
+    
+    .search{
+        width: 50px;
+        height: 35px;
+        border: 1px dotted white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background: #2c2c2c;
+        text-align: center;
+        padding-top: 9px;
+        color: white;
+        cursor: pointer;
+    }
+    .fa-microphone{
+        font-size: 20px;
+        margin-left: 20px;
+        padding-top: 10px;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    /* mrcophone hover */
+    .fa-microphone:hover{
+        background: grey;
+       }
+    
+    
+    .firststage3{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        margin-right: 30px;
+        
+    }
+    .fa-video{
+        font-size: 20px;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+    .fa-bell{
+        
+        font-size: 20px;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+    .roundD{
+        width: 30px;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 50%;
+        background: purple;
+        color: white;
+        text-align: center;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+    .right{
+        width: 100px;
+        height: 60vh;
+        font-size: 14px;
+        font-weight: bold;
+        overflow: hidden;
+         cursor: pointer;
+    }  
+    
+    .right .mainhome .homer{
+        padding: 20px;
+        font-weight: lighter;
+    }
+
+    .allicons{
+        padding-right: 20px;
+        padding-left: 12px;
+    }
+     
+     hr{
+         width: 0;
+         margin-left: 0;
+    }
+
+    .left{
+        margin-left: 20px;
+        width: calc(100vw - 120px);
+        height: 80vh;
+        /*background: white;*/
+    }
+    
+    
+    .left .others2{
+        width: 90%;
+        height: 100%;
+        margin-left: 50px;
+        /*background: green;*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2px;
+    
+    }
+    .picture1{
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+
+}
+
+@media (min-width: 700px)and (max-width: 824px){
+    .firstflex{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .firststage1{
+        display: flex;
+        margin-left: 25px;
+        flex-grow: 1;
+        
+    }
+    
+    .solidbars{
+        padding-top: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-youtube{
+        color: red;
+        padding-left: 30px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .name1{
+        padding-top: 2px;
+        padding-left: 2px;
+        font-size: 23px;
+    }
+    sup{
+        font-size: 10px;
+        padding-left: 2px;
+    
+    }
+    
+    .firststage2{
+        display: flex;
+        flex-grow: 4;
+        
+    }
+    .searchy{
+        width: 150px;
+        height: 35px;
+        border: 1px dotted white;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding-left: 5px;
+        background: #222021;
+        z-index: 4;
+    }
+    
+    .search{
+        width: 50px;
+        height: 35px;
+        border: 1px dotted white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background: #2c2c2c;
+        text-align: center;
+        padding-top: 9px;
+        color: white;
+        cursor: pointer;
+    }
+    .fa-microphone{
+        font-size: 20px;
+        margin-left: 20px;
+        padding-top: 10px;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    /* mrcophone hover */
+    .fa-microphone:hover{
+        background: grey;
+       }
+    
+    
+    .firststage3{
+        display: flex;
+        flex-grow: 3;
+        justify-content: space-between;
+        margin-right: 40px;
+        
+    }
+    .fa-video{
+        font-size: 20px;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+    .fa-bell{
+        
+        font-size: 20px;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+    .roundD{
+        width: 30px;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 50%;
+        background: purple;
+        color: white;
+        text-align: center;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+    .right{
+        width: 0;
+        height: 0;
+        font-size: 14px;
+        font-weight: bold;
+        overflow: hidden;
+         cursor: pointer;
+    }  
+    
+    .right .mainhome .homer{
+        padding: 20px;
+        font-weight: lighter;
+    }
+
+    .allicons{
+        padding-right: 20px;
+        padding-left: 12px;
+    }
+     
+     hr{
+         width: 0;
+         margin-left: 0;
+    }
+
+    .left{
+        margin-left: 20px;
+        width: calc(100vw - 20px);
+        height: 80vh;
+        /*background: white;*/
+    }
+    
+    
+    .left .others2{
+        width: 100%;
+        height: 100%;
+        /*background: green;*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2px;
+    
+    }
+    .picture1{
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+
+}
+
+@media (min-width: 600px)and (max-width: 699px){
+    .firstflex{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .firststage1{
+        display: flex;
+        margin-left: 25px;
+        flex-grow: 1;
+        
+    }
+    
+    .solidbars{
+        padding-top: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-youtube{
+        color: red;
+        padding-left: 30px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .name1{
+        padding-top: 2px;
+        padding-left: 2px;
+        font-size: 23px;
+    }
+    sup{
+        font-size: 10px;
+        padding-left: 2px;
+    
+    }
+    
+    .firststage2{
+        display: flex;
+        flex-grow: 4;
+        
+    }
+    .searchy{
+        width: 100px;
+        height: 35px;
+        border: 1px dotted white;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding-left: 5px;
+        background: #222021;
+        z-index: 4;
+    }
+    
+    .search{
+        width: 50px;
+        height: 35px;
+        border: 1px dotted white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background: #2c2c2c;
+        text-align: center;
+        padding-top: 9px;
+        color: white;
+        cursor: pointer;
+    }
+    .fa-microphone{
+        font-size: 20px;
+        margin-left: 5px;
+        padding-top: 10px;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    /* mrcophone hover */
+    .fa-microphone:hover{
+        background: grey;
+       }
+    
+    
+    .firststage3{
+        display: flex;
+        flex-grow: 3;
+        justify-content: space-between;
+        margin-right: 30px;
+        
+    }
+    .fa-video{
+        font-size: 20px;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+    .fa-bell{
+        
+        font-size: 20px;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+    .roundD{
+        width: 30px;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 50%;
+        background: purple;
+        color: white;
+        text-align: center;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+    .right{
+        width: 0;
+        height: 0;
+        font-size: 14px;
+        font-weight: bold;
+        overflow: hidden;
+         cursor: pointer;
+    }  
+    
+    .right .mainhome .homer{
+        padding: 20px;
+        font-weight: lighter;
+    }
+
+    .allicons{
+        padding-right: 20px;
+        padding-left: 12px;
+    }
+     
+     hr{
+         width: 0;
+         margin-left: 0;
+    }
+
+    .left{
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100vw - 40px);
+        height: 80vh;
+        /*background: white;*/
+    }
+    
+    
+    .left .others2{
+        width: 70%;
+        height: 100%;
+        margin-left: 100px;
+        margin-right: 
+        /*background: green;*/
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2px;
+    
+    }
+    .picture1{
+        /*width: 60%;*/
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+
+}
+
+@media (min-width: 480px)and (max-width: 599px){
+    .firstflex{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .firststage1{
+        display: flex;
+        margin-left: 25px;
+        flex-grow: 1;
+        
+    }
+    
+    .solidbars{
+        padding-top: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-youtube{
+        color: red;
+        padding-left: 30px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .name1{
+        padding-top: 2px;
+        padding-left: 2px;
+        font-size: 23px;
+    }
+    sup{
+        font-size: 10px;
+        padding-left: 2px;
+    
+    }
+    
+    .firststage2{
+        display: flex;
+        flex-grow: 4;
+        
+    }
+    .searchy{
+        width: 50px;
+        height: 35px;
+        border: 1px dotted white;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding-left: 5px;
+        background: #222021;
+        z-index: 4;
+    }
+    
+    .search{
+        width: 20px;
+        height: 35px;
+        border: 1px dotted white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background: #2c2c2c;
+        text-align: center;
+        padding-top: 9px;
+        color: white;
+        cursor: pointer;
+    }
+    .fa-microphone{
+        font-size: 20px;
+        margin-left: 2px;
+        padding-top: 10px;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    /* mrcophone hover */
+    .fa-microphone:hover{
+        background: grey;
+       }
+    
+    
+    .firststage3{
+        display: flex;
+        flex-grow: 3;
+        justify-content: space-between;
+        margin-right: 20px;
+        
+    }
+    .fa-video{
+        font-size: 20px;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+    .fa-bell{
+        
+        font-size: 20px;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+    .roundD{
+        width: 30px;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 50%;
+        background: purple;
+        color: white;
+        text-align: center;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+    .right{
+        width: 0;
+        height: 0;
+        font-size: 14px;
+        font-weight: bold;
+        overflow: hidden;
+         cursor: pointer;
+    }  
+    
+    .right .mainhome .homer{
+        padding: 20px;
+        font-weight: lighter;
+    }
+
+    .allicons{
+        padding-right: 20px;
+        padding-left: 12px;
+    }
+     
+     hr{
+         width: 0;
+         margin-left: 0;
+    }
+
+    .left{
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100vw - 40px);
+        height: 80vh;
+        /*background: white;*/
+    }
+    
+    
+    .left .others2{
+        width: 80%;
+        height: 100%;
+        margin-left: 40px;
+        /*background: green;*/
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2px;
+    
+    }
+    .picture1{
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+
+}
+
+@media (min-width: 320px)and (max-width: 479px){
+    .firstflex{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .firststage1{
+        display: flex;
+        margin-left: 25px;
+        flex-grow: 1;
+        
+    }
+    
+    .solidbars{
+        padding-top: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .fa-youtube{
+        color: red;
+        padding-left: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .name1{
+        padding-top: 2px;
+        padding-left: 2px;
+        font-size: 20px;
+    }
+    sup{
+        font-size: 10px;
+        padding-left: 2px;
+    
+    }
+    
+    .firststage2{
+        display: flex;
+        flex-grow: 4;
+        
+    }
+    .searchy{
+        width: 0px;
+        height: 35px;
+        border: 1px dotted white;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding-left: 5px;
+        background: #222021;
+        z-index: 4;
+    }
+    
+    .search{
+        width: 20px;
+        height: 35px;
+        border: 1px dotted white;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background: #2c2c2c;
+        text-align: center;
+        padding-top: 9px;
+        color: white;
+        cursor: pointer;
+    }
+    .fa-microphone{
+        font-size: 18px;
+        margin-left: 0px;
+        padding-top: 10px;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    /* mrcophone hover */
+    .fa-microphone:hover{
+        background: grey;
+       }
+    
+    
+    .firststage3{
+        display: flex;
+        flex-grow: 3;
+        justify-content: space-between;
+        margin-right: 20px;
+        
+    }
+    .fa-video{
+        font-size: 20px;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+    .fa-bell{
+        
+        font-size: 20px;
+        padding-top: 8px;
+        cursor: pointer;
+    }
+    .roundD{
+        width: 30px;
+        height: 30px;
+        border: 2px solid white;
+        border-radius: 50%;
+        background: purple;
+        color: white;
+        text-align: center;
+        padding-top: 5px;
+        cursor: pointer;
+    }
+    .right{
+        width: 0;
+        height: 0;
+        font-size: 14px;
+        font-weight: bold;
+        overflow: hidden;
+         cursor: pointer;
+    }  
+    
+    .right .mainhome .homer{
+        padding: 20px;
+        font-weight: lighter;
+    }
+
+    .allicons{
+        padding-right: 20px;
+        padding-left: 12px;
+    }
+     
+     hr{
+         width: 0;
+         margin-left: 0;
+    }
+
+    .left{
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100vw - 40px);
+        height: 80vh;
+        /*background: white;*/
+    }
+    
+    
+    .left .others2{
+        width: 100%;
+        height: 100%;
+        margin-left: 20px;
+        /*background: green;*/
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2px;
+    
+    }
+    .picture1{
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+
+}
+
+
+
+
+
